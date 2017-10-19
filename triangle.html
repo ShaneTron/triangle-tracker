@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Triangle?</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please enter the lengths of each side of the triangle to find out what kind of triangle it is.</h1>
+      <form id="triangle">
+        <div class="form-group">
+          <label for="side1">Side 1</label>
+          <input id="side1" type="text">
+        </div>
+        <div class="form-group">
+          <label for="side2">Side 2</label>
+          <input id="side2" type="text">
+        </div>
+        <div class="form-group">
+          <label for="side3">Side 3</label>
+          <input id="side3" type="text">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div class="results">
+        <div id="equilateral">
+          <p>This is an equilateral triangle</p>
+        </div>
+        <div id="isosceles">
+          <p>This is an isosceles triangle</p>
+        </div>
+        <div id="scalene">
+          <p>This is a scalene triangle</p>
+        </div>
+        <div id="notATriangle">
+          <p>This is not a triangle. The sum of the lengths of any two sides of a triangle is less than or equal to the length of the third side.</p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
